@@ -1,8 +1,52 @@
-<li>
-  <a href="https://vadymzelenko.github.io/lite-pet-projects/RSVP-reader/RSVP-reader.html">RSVP-reader</a>
-  <a href="https://vadymzelenko.github.io/lite-pet-projects/photo-sudoku-solver/photo-sudoku-solver.html">Photo sudoku solver</a>
-    <a href="https://vadymzelenko.github.io/lite-pet-projects/Portfolio-with-game-Life/index.html">Portfolio with game Life</a>
-    <a href="">else</a>
-    <a href="">else</a>
-
-</li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Small Projects — Vadym Zelenko</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; padding: 48px 16px; background: #0e0f13; color: #e6e6e6;
+           font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 880px; margin: 0 auto; }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    p.lead { margin: 0 0 32px; color: #9aa0aa; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    a.card { display: flex; flex-direction: column; padding: 20px; border: 1px solid #262a33; border-radius: 12px;
+             background: #15171d; color: inherit; text-decoration: none; transition: border-color .15s, transform .15s; }
+    a.card:hover { border-color: #4c7dff; transform: translateY(-2px); }
+    .card h2 { margin: 0 0 6px; font-size: 18px; }
+    .card p { margin: 0 0 14px; color: #b3b8c2; font-size: 15px; flex: 1; }
+    .tags { font-size: 13px; color: #7f8794; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Small Projects</h1>
+  <p class="lead">Single-page tools and experiments. Each one runs in the browser without installation.</p>
+  <div class="grid">
+    <a class="card" href="RSVP-reader/RSVP-reader.html">
+      <h2>Flash RSVP Reader</h2>
+      <p>Speed reading by showing one word at a time. Opens TXT and FB2 books, adjustable speed, progress saved in the browser.</p>
+      <div class="tags">JavaScript · localStorage</div>
+    </a>
+    <a class="card" href="photo-sudoku-solver/photo-sudoku-solver.html">
+      <h2>Photo Sudoku Solver</h2>
+      <p>Recognises a sudoku grid from a photo with OCR and solves it. Digits can also be entered by hand.</p>
+      <div class="tags">JavaScript · OCR · Canvas</div>
+    </a>
+    <a class="card" href="Atom-3D/index.html">
+      <h2>Atom 3D</h2>
+      <p>Interactive 3D model of an atom for any element of the periodic table, with search and orbit controls.</p>
+      <div class="tags">Three.js · WebGL</div>
+    </a>
+    <a class="card" href="Portfolio-with-game-Life/index.html">
+      <h2>Portfolio with Game of Life</h2>
+      <p>A business-card page with Conway's Game of Life running in the background and a QR code to share it.</p>
+      <div class="tags">HTML · CSS · JavaScript</div>
+    </a>
+  </div>
+</main>
+</body>
+</html>
